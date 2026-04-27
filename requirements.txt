@@ -1,0 +1,11 @@
+[phases.setup]
+nixPkgs = ["python311", "gcc"]
+
+[phases.install]
+cmds = ["python -m venv /opt/venv && . /opt/venv/bin/activate && pip install --upgrade pip && pip install -r requirements.txt"]
+
+[phases.build]
+cmds = ["chmod +x boot.sh"]
+
+[start]
+cmd = "PATH=/opt/venv/bin:$PATH sh boot.sh"

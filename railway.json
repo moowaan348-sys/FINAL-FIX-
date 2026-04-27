@@ -1,0 +1,44 @@
+# ─── Secrets ──────────────────────────────────
+# Never commit your real env. Set these as Railway/host variables instead.
+.env
+.env.local
+.env.*.local
+
+# ─── Python ───────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+ENV/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+pip-wheel-metadata/
+
+# ─── OS ───────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── IDE ──────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ─── Runtime / logs ───────────────────────────
+*.log
+logs/
+tmp/
+
+# ─── Build artefacts ──────────────────────────
+build/
+dist/
+*.zip
